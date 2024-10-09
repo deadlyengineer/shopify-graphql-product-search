@@ -1,0 +1,11 @@
+{
+  "name": "w3global",
+  "version": "1.0.0",
+  "description": "Screening test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CliveLee",
+  "license": "ISC"
+}
