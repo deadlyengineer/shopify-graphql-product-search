@@ -57,9 +57,10 @@ const fetchProducts = async (name) => {
     }
 }
 
-if (argv.name) {
-    fetchProducts(argv.name);
-} else {
-    console.log('Please provide a product name using the --name flag.');
-}
-
+(async () => {
+    if (argv.name) {
+        await fetchProducts(argv.name);
+    } else {
+        console.log('Please provide a product name using the --name flag.');
+    }
+})();
