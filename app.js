@@ -48,6 +48,8 @@ const fetchProducts = async (name) => {
             const productName = product.node.title;
             const variants = product.node.variants.edges;
 
+            variants.sort((a, b) => a.node.price - b.node.price);
+
             variants.forEach((variant) => {
                 console.log(`${productName} - ${variant.node.title} - price $${variant.node.price}`);
             });
